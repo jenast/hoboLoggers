@@ -1,1 +1,2 @@
 # hoboLoggers
+This is some R code to wrangle temperature and humidity data from Hobo's MX loggers. I have several deployed MX2301A loggers, and the exported file from HOBOlink formats the data in separate columns. The R-script pivots this to a longer format.
