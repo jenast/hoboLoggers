@@ -1,0 +1,268 @@
+---
+title: "Arranging logger data from HoboLink"
+author: "Jens Åström"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  NinaR::jensAnalysis:
+    highlight: tango
+    fig_caption: yes
+    toc: yes
+---
+
+
+```{r, include = F}
+#Some common packages, loading rmarkdown doesn't like the messages from tidyverse, so we don't include this in the document'
+require(tidyverse)
+require(DBI)
+require(RPostgres)
+require(ggplot2)
+require(xtable)
+require(NinaR)
+```
+
+
+```{r setup, include=FALSE}
+#This is optional
+#I choose the 'styler' package for tidying the code to preserve indentations
+#I set the cutoff for code tidying to 60, but this doesn't currently work with styler.
+#Set tidy = True to get the knitr default
+#I want all figures as png and pdf in high quality in a subfolder called figure 
+
+knitr::opts_chunk$set(echo = TRUE, 
+                      tidy = "styler",
+                      dev = c("png", "pdf"),
+                      dpi = 600,
+                      fig.path = "figure/",
+                      tidy.opts = list(width.cutoff = 60)
+                      )
+
+options(xtable.comment = F, 
+        xtable.include.rownames = F, 
+        nina.logo.y.pos = 0.15)
+palette(ninaPalette())
+```
+
+
+
+```{r, include = F, eval = F}
+#This connects to the gisdatabase with a DBI connection named `con`.
+#Use for example dbGetQuery(con, "SELECT * FROM ....") to query the database
+postgreSQLConnect(host = "gisdata-db.nina.no", 
+                 dbname = "gisdata", 
+                 username = "postgjest", 
+                 password = "gjestpost")
+```
+
+Intro
+===========
+The data exports for the temperature and humidity MX loggers from Hobo needs a bit of data wrangling before it can be used. The different data streams from each logger all get a separate column. Here we develop a script to turn this into a more usable long format.
+
+
+Read in data
+==========
+I have a single export with many loggers, as a csv file. 
+
+```{r}
+inputFile <- "../rawData/All_MX_2020_2020_06_26_09_20_43_UTC_1.csv"
+
+rawDat <- read_csv(inputFile,col_types = cols(.default = "c"))
+
+dat <- rawDat %>%  
+  select(-"Line#") %>% 
+  mutate(date = as.POSIXct(Date, format = "%m/%d/%y %H:%M:%S")) %>% 
+  mutate_if(is_character, as.double) %>% 
+  select(-Date)
+
+dat
+```
+That's quite the number of columns...
+
+
+
+We have to pivot this data set to a longer format. We also get rid of the rows with no data.
+```{r}
+temp <- dat %>% 
+  pivot_longer(cols = starts_with("Temperature"),
+               names_to = "logger",
+               values_to = "temperature") %>% 
+  select(date,
+         logger,
+         temperature) %>% 
+  filter(!is.na(temperature))
+
+rh <- dat %>% 
+  pivot_longer(cols = starts_with("RH"),
+               names_to = "logger",
+               values_to = "rh") %>% 
+  select(date,
+         logger,
+         rh)%>% 
+  filter(!is.na(rh))
+
+dew  <- dat %>% 
+  pivot_longer(cols = starts_with("Dew"),
+               names_to = "logger",
+               values_to = "dew") %>% 
+  select(date,
+         logger,
+         dew) %>% 
+  filter(!is.na(dew))
+
+```
+
+The data now looks like this
+```{r}
+temp
+```
+
+Time to strip the logger names and merge the tables
+
+```{r}
+temp <- temp %>% 
+  mutate(logger = str_extract(logger,
+                              "[^, ]+$"))
+
+rh <- rh %>% 
+  mutate(logger = str_extract(logger,
+                              "[^, ]+$"))
+dew <- dew %>% 
+  mutate(logger = str_extract(logger,
+                              "[^, ]+$"))
+
+```
+
+Check to see that the dates are the same for the datasets
+```{r}
+all(all(temp$date == rh$date),
+all(rh$date == dew$date))
+```
+
+```{r}
+combDat <- temp %>% 
+  full_join(rh,
+             by = c("date" = "date",
+                    "logger" = "logger")) %>% 
+  full_join(dew,
+            by = c("date" = "date",
+                    "logger" = "logger")) %>% 
+  arrange(logger,
+          date)
+```
+
+
+```{r}
+combDat
+```
+
+Package this into a funtion
+==========
+
+```{r}
+longerHobo <- function(inputFile){
+  
+  rawDat <- read_csv(inputFile,col_types = cols(.default = "c"))
+
+  dat <- rawDat %>%  
+    select(-"Line#") %>% 
+    mutate(date = as.POSIXct(Date, format = "%m/%d/%y %H:%M:%S")) %>% 
+    mutate_if(is_character, as.double) %>% 
+    select(-Date)
+
+
+    dat <- rawDat %>%  
+  select(-"Line#") %>% 
+  mutate(date = as.POSIXct(Date, format = "%m/%d/%y %H:%M:%S")) %>% 
+  mutate_if(is_character, as.double) %>% 
+  select(-Date)
+ 
+   
+  temp <- dat %>% 
+    pivot_longer(cols = starts_with("Temperature"),
+               names_to = "logger",
+               values_to = "temperature") %>% 
+    select(date,
+         logger,
+         temperature) %>% 
+    filter(!is.na(temperature))
+
+  rh <- dat %>% 
+    pivot_longer(cols = starts_with("RH"),
+                 names_to = "logger",
+                 values_to = "rh") %>% 
+    select(date,
+           logger,
+           rh)%>% 
+    filter(!is.na(rh))
+  
+  dew  <- dat %>% 
+    pivot_longer(cols = starts_with("Dew"),
+                 names_to = "logger",
+                 values_to = "dew") %>% 
+    select(date,
+           logger,
+           dew) %>% 
+    filter(!is.na(dew))
+  
+  
+  temp <- temp %>% 
+    mutate(logger = str_extract(logger,
+                              "[^, ]+$"))
+  rh <- rh %>% 
+    mutate(logger = str_extract(logger,
+                                "[^, ]+$"))
+  dew <- dew %>% 
+    mutate(logger = str_extract(logger,
+                                "[^, ]+$"))
+  
+  if(!all(all(temp$date == rh$date),
+  all(rh$date == dew$date))) stop("Tables datetimes doesn't match")
+  
+  combDat <- temp %>% 
+  full_join(rh,
+             by = c("date" = "date",
+                    "logger" = "logger")) %>% 
+  full_join(dew,
+            by = c("date" = "date",
+                    "logger" = "logger")) %>% 
+  arrange(logger,
+          date)
+  
+  return(combDat)
+}
+```
+
+We can check that it produces the same results as the script.
+
+```{r}
+combDat2 <- longerHobo("../rawData/All_MX_2020_2020_06_26_09_20_43_UTC_1.csv")
+
+all(combDat == combDat2)
+```
+
+
+
+
+Check the data out
+=======
+
+```{r}
+ggplot(combDat) +
+  geom_line(aes(x = date, y = temperature, color = logger))
+
+```
+
+```{r}
+combDat %>% 
+  filter(logger == "20835816") %>% 
+ggplot() +
+  geom_line(aes(x = date, y = temperature), color = "green") +
+  geom_line(aes(x = date, y = dew), color = "blue")
+
+
+```
+
+```{r}
+combDat %>% select(logger) %>% distinct()
+```
+
+
