@@ -154,7 +154,7 @@ combDat <- temp %>%
 combDat
 ```
 
-Package this into a funtion
+Package this into a function
 ==========
 
 ```{r}

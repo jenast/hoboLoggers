@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.4.30)  26 JUN 2020 15:35
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.4.30)  26 JUN 2020 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1275,12 +1275,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 551.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
 Package rerunfilecheck Info: File `arrangeHoboData.out' has not changed.
-(rerunfilecheck)             Checksum: CF04215056082A8FACB52959BBE600F7.
+(rerunfilecheck)             Checksum: 196C4E3E67CCE4DB2EDF6E1B50B5C730.
  ) 
 Here is how much of TeX's memory you used:
  25107 strings out of 494152
- 467793 string characters out of 6158058
- 606632 words of memory out of 5000000
+ 467794 string characters out of 6158058
+ 606633 words of memory out of 5000000
  28899 multiletter control sequences out of 15000+600000
  533091 words of font info for 36 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
