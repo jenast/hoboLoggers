@@ -240,29 +240,33 @@ all(combDat == combDat2)
 ```
 
 
-
-
 Check the data out
 =======
 
 ```{r}
 ggplot(combDat) +
-  geom_line(aes(x = date, y = temperature, color = logger))
+  geom_line(aes(x = date, y = temperature, color = logger)) +
+  ggtitle("All the temperatures so far")
 
 ```
 
 ```{r}
-combDat %>% 
+oneLogger <- combDat %>% 
   filter(logger == "20835816") %>% 
-ggplot() +
-  geom_line(aes(x = date, y = temperature), color = "green") +
-  geom_line(aes(x = date, y = dew), color = "blue")
-
-
+  select(Date = date, 
+         logger,
+         Temperature = temperature,
+         Relative_humidity = rh,
+         Dew_point = dew) %>% 
+  pivot_longer(-c(Date, logger),
+               names_to = "Data_type",
+               values_to = "Values")
+  
+ggplot(oneLogger) +
+  geom_line(aes(x = Date, y = Values, color = Data_type)) +
+  scale_color_nina() +
+  ggtitle("All the data from one logger")
 ```
 
-```{r}
-combDat %>% select(logger) %>% distinct()
-```
 
 
