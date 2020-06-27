@@ -120,7 +120,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{26 June, 2020}
+  \date{27 June, 2020}
 
 
 %\linespread{1.3}
@@ -546,6 +546,83 @@ We can check that it produces the same results as the script.
 \end{Shaded}
 
 \includegraphics{figure/unnamed-chunk-13-1.png}
+
+That looks like some days were pretty warm. This logger was placed
+outside my house and gets some sun in the evening. Let's look at the
+hottest day. We can add columns with the highest temperature per day and
+lowest. I'll look at dates later than 25/5 since I think I had it
+indoors until then.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{minMaxTemp <{-}}\StringTok{ }\NormalTok{combDat }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{day =} \KeywordTok{as.Date}\NormalTok{(date)) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{group\_by}\NormalTok{(logger, day) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{dailyMaxTemp =} \KeywordTok{max}\NormalTok{(temperature),}
+         \DataTypeTok{dailyMinTemp =} \KeywordTok{min}\NormalTok{(temperature)) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{()}
+
+
+\NormalTok{minMaxTemp }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(logger }\OperatorTok{==}\StringTok{ "20835816"}\NormalTok{) }\OperatorTok{\%>\%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(day }\OperatorTok{>}\StringTok{ \textquotesingle{}2020{-}05{-}25\textquotesingle{}}\NormalTok{) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(dailyMinTemp }\OperatorTok{==}\StringTok{ }\KeywordTok{max}\NormalTok{(dailyMinTemp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 72 x 8
+##    date                logger temperature    rh   dew day       
+##    <dttm>              <chr>        <dbl> <dbl> <dbl> <date>    
+##  1 2020-06-21 02:08:33 20835~        20.8  48.7  9.66 2020-06-21
+##  2 2020-06-21 02:28:33 20835~        20.7  48.9  9.62 2020-06-21
+##  3 2020-06-21 02:48:33 20835~        20.5  50.2  9.83 2020-06-21
+##  4 2020-06-21 03:08:33 20835~        20.4  50.1  9.69 2020-06-21
+##  5 2020-06-21 03:28:33 20835~        20.5  50.1  9.77 2020-06-21
+##  6 2020-06-21 03:48:33 20835~        20.8  49.8  9.94 2020-06-21
+##  7 2020-06-21 04:08:33 20835~        20.9  50.4 10.3  2020-06-21
+##  8 2020-06-21 04:28:33 20835~        21.0  50.8 10.5  2020-06-21
+##  9 2020-06-21 04:48:33 20835~        21.2  50.3 10.4  2020-06-21
+## 10 2020-06-21 05:08:33 20835~        21.6  49   10.4  2020-06-21
+## # ... with 62 more rows, and 2 more variables: dailyMaxTemp <dbl>,
+## #   dailyMinTemp <dbl>
+\end{verbatim}
+
+So it looks like 2020-06-21 had the ``highest lowest'' daily
+temperature. A little poking around shows that the night up to the 21/6
+actually was a ``tropical night'', with temperatures above
+\(20^{\circ}\) Celsius. The sharp spike above 35 degrees at about 16:00
+on 22/6 is when the sun hit the logger.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{minMaxTemp }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(logger }\OperatorTok{==}\StringTok{ "20835816"}\NormalTok{) }\OperatorTok{\%>\%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(day }\OperatorTok{>=}\StringTok{ \textquotesingle{}2020{-}06{-}20\textquotesingle{}} \OperatorTok{\&}
+\StringTok{           }\NormalTok{day }\OperatorTok{<=}\StringTok{ \textquotesingle{}2020{-}06{-}21\textquotesingle{}}\NormalTok{) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(.) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom\_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ date, }\DataTypeTok{y =}\NormalTok{ temperature), }\DataTypeTok{color =} \StringTok{"orangered4"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Tropical night in Trøndelag."}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{figure/unnamed-chunk-15-1.png}
+
+This seems to have been the only night so far this warm.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{minMaxTemp }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(logger }\OperatorTok{==}\StringTok{ "20835816"}\NormalTok{) }\OperatorTok{\%>\%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(day }\OperatorTok{>=}\StringTok{ \textquotesingle{}2020{-}06{-}01\textquotesingle{}} \OperatorTok{\&}
+\StringTok{           }\NormalTok{day }\OperatorTok{<=}\StringTok{ \textquotesingle{}2020{-}06{-}30\textquotesingle{}}\NormalTok{) }\OperatorTok{\%>\%}\StringTok{ }
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{(.) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom\_line}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ date, }\DataTypeTok{y =}\NormalTok{ temperature), }\DataTypeTok{color =} \StringTok{"orangered4"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom\_hline}\NormalTok{(}\DataTypeTok{yintercept =} \DecValTok{20}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{figure/unnamed-chunk-16-1.png}
 
 
 \end{document}
