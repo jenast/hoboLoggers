@@ -1,27 +1,28 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.4.30)  27 JUN 2020 21:57
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.2.13)  28 OCT 2020 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **arrangeHoboData.tex
 (./arrangeHoboData.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 33 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/lm/lmodern.sty
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -65,7 +66,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -80,30 +81,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count89
-\leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count91
-\DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
 \tag@help=\toks16
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
 \andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -115,8 +116,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 ) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -135,26 +136,26 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
 r XeLaTeX)
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count100
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count99
 ) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/te
 xlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/tex
 mf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-07-25 L3 programming layer (loader) 
+Package: expl3 2018/02/21 L3 programming layer (loader) 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-07-25 L3 programming layer (code)
-\c_max_int=\count101
-\l_tmpa_int=\count102
-\l_tmpb_int=\count103
-\g_tmpa_int=\count104
-\g_tmpb_int=\count105
-\g__kernel_prg_map_int=\count106
-\c__ior_term_ior=\count107
-\c_log_iow=\count108
-\l_iow_line_count_int=\count109
-\l__iow_line_target_int=\count110
-\l__iow_one_indent_int=\count111
-\l__iow_indent_int=\count112
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count100
+\l_tmpa_int=\count101
+\l_tmpb_int=\count102
+\g_tmpa_int=\count103
+\g_tmpb_int=\count104
+\g__intarray_font_int=\count105
+\g__prg_map_int=\count106
+\c_log_iow=\count107
+\l_iow_line_count_int=\count108
+\l__iow_line_target_int=\count109
+\l__iow_one_indent_int=\count110
+\l__iow_indent_int=\count111
 \c_zero_dim=\dimen112
 \c_max_dim=\dimen113
 \l_tmpa_dim=\dimen114
@@ -173,165 +174,334 @@ Package: expl3 2019-07-25 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count113
-\l__intarray_loop_int=\count114
-\c__intarray_sp_dim=\dimen118
-\g__intarray_font_int=\count115
-\c__fp_leading_shift_int=\count116
-\c__fp_middle_shift_int=\count117
-\c__fp_trailing_shift_int=\count118
-\c__fp_big_leading_shift_int=\count119
-\c__fp_big_middle_shift_int=\count120
-\c__fp_big_trailing_shift_int=\count121
-\c__fp_Bigg_leading_shift_int=\count122
-\c__fp_Bigg_middle_shift_int=\count123
-\c__fp_Bigg_trailing_shift_int=\count124
-\g__fp_array_int=\count125
-\l__fp_array_loop_int=\count126
-\l__sort_length_int=\count127
-\l__sort_min_int=\count128
-\l__sort_top_int=\count129
-\l__sort_max_int=\count130
-\l__sort_true_max_int=\count131
-\l__sort_block_int=\count132
-\l__sort_begin_int=\count133
-\l__sort_end_int=\count134
-\l__sort_A_int=\count135
-\l__sort_B_int=\count136
-\l__sort_C_int=\count137
-\l__str_internal_int=\count138
-\l__tl_analysis_normal_int=\count139
-\l__tl_analysis_index_int=\count140
-\l__tl_analysis_nesting_int=\count141
-\l__tl_analysis_type_int=\count142
-\l__regex_internal_a_int=\count143
-\l__regex_internal_b_int=\count144
-\l__regex_internal_c_int=\count145
-\l__regex_balance_int=\count146
-\l__regex_group_level_int=\count147
-\l__regex_mode_int=\count148
-\c__regex_cs_in_class_mode_int=\count149
-\c__regex_cs_mode_int=\count150
-\l__regex_catcodes_int=\count151
-\l__regex_default_catcodes_int=\count152
-\c__regex_catcode_L_int=\count153
-\c__regex_catcode_O_int=\count154
-\c__regex_catcode_A_int=\count155
-\c__regex_all_catcodes_int=\count156
-\l__regex_show_lines_int=\count157
-\l__regex_min_state_int=\count158
-\l__regex_max_state_int=\count159
-\l__regex_left_state_int=\count160
-\l__regex_right_state_int=\count161
-\l__regex_capturing_group_int=\count162
-\l__regex_min_pos_int=\count163
-\l__regex_max_pos_int=\count164
-\l__regex_curr_pos_int=\count165
-\l__regex_start_pos_int=\count166
-\l__regex_success_pos_int=\count167
-\l__regex_curr_char_int=\count168
-\l__regex_curr_catcode_int=\count169
-\l__regex_last_char_int=\count170
-\l__regex_case_changed_char_int=\count171
-\l__regex_curr_state_int=\count172
-\l__regex_step_int=\count173
-\l__regex_min_active_int=\count174
-\l__regex_max_active_int=\count175
-\l__regex_replacement_csnames_int=\count176
-\l__regex_match_count_int=\count177
-\l__regex_min_submatch_int=\count178
-\l__regex_submatch_int=\count179
-\l__regex_zeroth_submatch_int=\count180
-\g__regex_trace_regex_int=\count181
-\c_empty_box=\box29
-\l_tmpa_box=\box30
-\l_tmpb_box=\box31
-\g_tmpa_box=\box32
-\g_tmpb_box=\box33
-\l__box_top_dim=\dimen119
-\l__box_bottom_dim=\dimen120
-\l__box_left_dim=\dimen121
-\l__box_right_dim=\dimen122
-\l__box_top_new_dim=\dimen123
-\l__box_bottom_new_dim=\dimen124
-\l__box_left_new_dim=\dimen125
-\l__box_right_new_dim=\dimen126
-\l__box_internal_box=\box34
-\l__coffin_internal_box=\box35
-\l__coffin_internal_dim=\dimen127
-\l__coffin_offset_x_dim=\dimen128
-\l__coffin_offset_y_dim=\dimen129
-\l__coffin_x_dim=\dimen130
-\l__coffin_y_dim=\dimen131
-\l__coffin_x_prime_dim=\dimen132
-\l__coffin_y_prime_dim=\dimen133
-\c_empty_coffin=\box36
-\l__coffin_aligned_coffin=\box37
-\l__coffin_aligned_internal_coffin=\box38
-\l_tmpa_coffin=\box39
-\l_tmpb_coffin=\box40
-\g_tmpa_coffin=\box41
-\g_tmpb_coffin=\box42
-\l__coffin_bounding_shift_dim=\dimen134
-\l__coffin_left_corner_dim=\dimen135
-\l__coffin_right_corner_dim=\dimen136
-\l__coffin_bottom_corner_dim=\dimen137
-\l__coffin_top_corner_dim=\dimen138
-\l__coffin_scaled_total_height_dim=\dimen139
-\l__coffin_scaled_width_dim=\dimen140
-\c__coffin_empty_coffin=\box43
-\l__coffin_display_coffin=\box44
-\l__coffin_display_coord_coffin=\box45
-\l__coffin_display_pole_coffin=\box46
-\l__coffin_display_offset_dim=\dimen141
-\l__coffin_display_x_dim=\dimen142
-\l__coffin_display_y_dim=\dimen143
-\g__file_internal_ior=\read1
-\l__seq_internal_a_int=\count182
-\l__seq_internal_b_int=\count183
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
-File: l3backend-xdvipdfmx.def 2019-04-06 v L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count184
-\l__pdf_internal_box=\box47
-\g__pdf_backend_object_int=\count185
-\g__pdf_backend_annotation_int=\count186
+\l_keys_choice_int=\count112
+\c__fp_leading_shift_int=\count113
+\c__fp_middle_shift_int=\count114
+\c__fp_trailing_shift_int=\count115
+\c__fp_big_leading_shift_int=\count116
+\c__fp_big_middle_shift_int=\count117
+\c__fp_big_trailing_shift_int=\count118
+\c__fp_Bigg_leading_shift_int=\count119
+\c__fp_Bigg_middle_shift_int=\count120
+\c__fp_Bigg_trailing_shift_int=\count121
+\l__sort_length_int=\count122
+\l__sort_min_int=\count123
+\l__sort_top_int=\count124
+\l__sort_max_int=\count125
+\l__sort_true_max_int=\count126
+\l__sort_block_int=\count127
+\l__sort_begin_int=\count128
+\l__sort_end_int=\count129
+\l__sort_A_int=\count130
+\l__sort_B_int=\count131
+\l__sort_C_int=\count132
+\l__tl_build_start_index_int=\count133
+\l__tl_build_index_int=\count134
+\l__tl_analysis_normal_int=\count135
+\l__tl_analysis_index_int=\count136
+\l__tl_analysis_nesting_int=\count137
+\l__tl_analysis_type_int=\count138
+\l__regex_internal_a_int=\count139
+\l__regex_internal_b_int=\count140
+\l__regex_internal_c_int=\count141
+\l__regex_balance_int=\count142
+\l__regex_group_level_int=\count143
+\l__regex_mode_int=\count144
+\c__regex_cs_in_class_mode_int=\count145
+\c__regex_cs_mode_int=\count146
+\l__regex_catcodes_int=\count147
+\l__regex_default_catcodes_int=\count148
+\c__regex_catcode_L_int=\count149
+\c__regex_catcode_O_int=\count150
+\c__regex_catcode_A_int=\count151
+\c__regex_all_catcodes_int=\count152
+\l__regex_show_lines_int=\count153
+\l__regex_min_state_int=\count154
+\l__regex_max_state_int=\count155
+\l__regex_left_state_int=\count156
+\l__regex_right_state_int=\count157
+\l__regex_capturing_group_int=\count158
+\l__regex_min_pos_int=\count159
+\l__regex_max_pos_int=\count160
+\l__regex_curr_pos_int=\count161
+\l__regex_start_pos_int=\count162
+\l__regex_success_pos_int=\count163
+\l__regex_curr_char_int=\count164
+\l__regex_curr_catcode_int=\count165
+\l__regex_last_char_int=\count166
+\l__regex_case_changed_char_int=\count167
+\l__regex_curr_state_int=\count168
+\l__regex_step_int=\count169
+\l__regex_min_active_int=\count170
+\l__regex_max_active_int=\count171
+\l__regex_replacement_csnames_int=\count172
+\l__regex_match_count_int=\count173
+\l__regex_min_submatch_int=\count174
+\l__regex_submatch_int=\count175
+\l__regex_zeroth_submatch_int=\count176
+\g__regex_trace_regex_int=\count177
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+\l__box_top_dim=\dimen118
+\l__box_bottom_dim=\dimen119
+\l__box_left_dim=\dimen120
+\l__box_right_dim=\dimen121
+\l__box_top_new_dim=\dimen122
+\l__box_bottom_new_dim=\dimen123
+\l__box_left_new_dim=\dimen124
+\l__box_right_new_dim=\dimen125
+\l__box_internal_box=\box33
+\l__coffin_internal_box=\box34
+\l__coffin_internal_dim=\dimen126
+\l__coffin_offset_x_dim=\dimen127
+\l__coffin_offset_y_dim=\dimen128
+\l__coffin_x_dim=\dimen129
+\l__coffin_y_dim=\dimen130
+\l__coffin_x_prime_dim=\dimen131
+\l__coffin_y_prime_dim=\dimen132
+\c_empty_coffin=\box35
+\l__coffin_aligned_coffin=\box36
+\l__coffin_aligned_internal_coffin=\box37
+\l_tmpa_coffin=\box38
+\l_tmpb_coffin=\box39
+\l__coffin_display_coffin=\box40
+\l__coffin_display_coord_coffin=\box41
+\l__coffin_display_pole_coffin=\box42
+\l__coffin_display_offset_dim=\dimen133
+\l__coffin_display_x_dim=\dimen134
+\l__coffin_display_y_dim=\dimen135
+\l__coffin_bounding_shift_dim=\dimen136
+\l__coffin_left_corner_dim=\dimen137
+\l__coffin_right_corner_dim=\dimen138
+\l__coffin_bottom_corner_dim=\dimen139
+\l__coffin_top_corner_dim=\dimen140
+\l__coffin_scaled_total_height_dim=\dimen141
+\l__coffin_scaled_width_dim=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count178
+\l__driver_tmp_box=\box43
 ))
-Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count187
-\g__xparse_grabber_int=\count188
-\l__xparse_m_args_int=\count189
-\l__xparse_v_nesting_int=\count190
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count179
+\g__xparse_grabber_int=\count180
+\l__xparse_m_args_int=\count181
+\l__xparse_mandatory_args_int=\count182
+\l__xparse_v_nesting_int=\count183
 )
-Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count191
-\l__fontspec_language_int=\count192
-\l__fontspec_strnum_int=\count193
-\l__fontspec_tmp_int=\count194
-\l__fontspec_tmpa_int=\count195
-\l__fontspec_tmpb_int=\count196
-\l__fontspec_tmpc_int=\count197
-\l__fontspec_em_int=\count198
-\l__fontspec_emdef_int=\count199
-\l__fontspec_strong_int=\count266
-\l__fontspec_strongdef_int=\count267
-\l__fontspec_tmpa_dim=\dimen144
-\l__fontspec_tmpb_dim=\dimen145
-\l__fontspec_tmpc_dim=\dimen146
+\l__fontspec_script_int=\count184
+\l__fontspec_language_int=\count185
+\l__fontspec_strnum_int=\count186
+\l__fontspec_tmp_int=\count187
+\l__fontspec_em_int=\count188
+\l__fontspec_emdef_int=\count189
+\l__fontspec_strong_int=\count190
+\l__fontspec_strongdef_int=\count191
+\l__fontspec_tmpa_dim=\dimen143
+\l__fontspec_tmpb_dim=\dimen144
+\l__fontspec_tmpc_dim=\dimen145
+\g__file_internal_ior=\read1
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/tuenc.def
-File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
-)) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 4051.
-LaTeX Info: Redefining \slshape on input line 4056.
-LaTeX Info: Redefining \scshape on input line 4061.
-LaTeX Info: Redefining \upshape on input line 4066.
-LaTeX Info: Redefining \em on input line 4096.
-LaTeX Info: Redefining \emph on input line 4121.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
 )) (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
@@ -339,17 +509,17 @@ ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count268
+\XKV@depth=\count192
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@eu@=\count269
-\c@eu@i=\count270
-\c@mkern=\count271
+\c@eu@=\count193
+\c@eu@i=\count194
+\c@mkern=\count195
 ) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -429,22 +599,22 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks22
-\MT@count=\count272
-LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen147
-LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
-\MT@listname@count=\count273
+\MT@count=\count196
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen146
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count197
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
-File: microtype-xetex.def 2019/02/28 v2.7b Definitions specific to xetex (RS)
-LaTeX Info: Redefining \lsstyle on input line 258.
+File: microtype-xetex.def 2018/01/14 v2.7a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 256.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 )) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
@@ -457,11 +627,15 @@ Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
@@ -487,64 +661,68 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen148
-\Hy@linkcounter=\count274
-\Hy@pagecounter=\count275
+\@linkdim=\dimen147
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count276
+\Hy@SavedSpaceFactor=\count266
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4550.
-Package hyperref Info: Link nesting OFF on input line 4555.
-Package hyperref Info: Hyper index ON on input line 4558.
-Package hyperref Info: Plain pages OFF on input line 4565.
-Package hyperref Info: Backreferencing OFF on input line 4570.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4803.
-\c@Hy@tempcnt=\count277
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count267
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5156.
-\XeTeXLinkMargin=\dimen149
-\Fld@menulength=\count278
-\Field@Width=\dimen150
-\Fld@charsize=\dimen151
-Package hyperref Info: Hyper figures OFF on input line 6411.
-Package hyperref Info: Link nesting OFF on input line 6416.
-Package hyperref Info: Hyper index ON on input line 6419.
-Package hyperref Info: backreferencing OFF on input line 6426.
-Package hyperref Info: Link coloring OFF on input line 6431.
-Package hyperref Info: Link coloring with OCG OFF on input line 6436.
-Package hyperref Info: PDF/A mode OFF on input line 6441.
-LaTeX Info: Redefining \ref on input line 6481.
-LaTeX Info: Redefining \pageref on input line 6485.
-\Hy@abspage=\count279
-\c@Item=\count280
-\c@Hfootnote=\count281
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen148
+\Fld@menulength=\count268
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count269
+\c@Item=\count270
+\c@Hfootnote=\count271
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2019/06/12 v6.88h Hyperref driver for XeTeX
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2019/06/12 v6.88h Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box48
-\c@Hy@AnnotLevel=\count282
-\HyField@AnnotCount=\count283
-\Fld@listcount=\count284
-\c@bookmark@seq@number=\count285
+\pdfm@box=\box44
+\c@Hy@AnnotLevel=\count272
+\HyField@AnnotCount=\count273
+\Fld@listcount=\count274
+\c@bookmark@seq@number=\count275
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
 )
 \Hy@SectionHShift=\skip52
 )
@@ -563,21 +741,23 @@ Package color Info: Driver file: xetex.def on input line 147.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 )) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2019/01/15
-Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
-\FV@CodeLineNo=\count286
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count276
 \FV@InFile=\read2
-\FV@TabBox=\box49
-\c@FancyVerbLine=\count287
-\FV@StepNumber=\count288
+\FV@TabBox=\box45
+\c@FancyVerbLine=\count277
+\FV@StepNumber=\count278
 \FV@OutFile=\write3
 ) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip53
-\fb@frw=\dimen152
-\fb@frh=\dimen153
-\FrameRule=\dimen154
-\FrameSep=\dimen155
+\fb@frw=\dimen151
+\fb@frh=\dimen152
+\FrameRule=\dimen153
+\FrameSep=\dimen154
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -589,8 +769,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 99.
 )
-\Gin@req@height=\dimen156
-\Gin@req@width=\dimen157
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
@@ -598,7 +778,7 @@ Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 ) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+Package: parskip 2001/04/09 non-zero parskip adjustments
 ) (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip54
@@ -611,30 +791,30 @@ Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count289
-\calc@Bcount=\count290
-\calc@Adimen=\dimen158
-\calc@Bdimen=\dimen159
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count279
+\calc@Bcount=\count280
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count291
+\calc@Ccount=\count281
 \calc@Cskip=\skip59
 ) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
-\AM@pagewidth=\dimen160
-\AM@pageheight=\dimen161
+\AM@pagewidth=\dimen159
+\AM@pageheight=\dimen160
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2017/10/31 v0.5l Pdfpages driver for XeTeX (AM)
 )
-\AM@pagebox=\box50
+\AM@pagebox=\box46
 \AM@global@opts=\toks23
 \AM@toc@title=\toks24
-\c@AM@survey=\count292
-\AM@templatesizebox=\box51
+\c@AM@survey=\count282
+\AM@templatesizebox=\box47
 ) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks25
@@ -643,9 +823,9 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks28
 \SOUL@token=\toks29
 \SOUL@spaceskip=\skip60
-\SOUL@ttwidth=\dimen162
-\SOUL@uldp=\dimen163
-\SOUL@ulht=\dimen164
+\SOUL@ttwidth=\dimen161
+\SOUL@uldp=\dimen162
+\SOUL@ulht=\dimen163
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -699,14 +879,14 @@ Package microtype Info: No adjustment of kerning.
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
-\AtBeginShipoutBox=\box52
+\AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring OFF on input line 164.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count283
 )
 LaTeX Info: Redefining \ref on input line 164.
 LaTeX Info: Redefining \pageref on input line 164.
@@ -719,29 +899,76 @@ LaTeX Info: Redefining \nameref on input line 164.
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
-) (./arrangeHoboData.toc)
+) (./arrangeHoboData.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+))
 \tf@toc=\write5
 \openout5 = `arrangeHoboData.toc'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 184.
+Package xcolor Warning: Incompatible color definition on input line 187.
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 188.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 191.
+[1
 
-Package xcolor Warning: Incompatible color definition on input line 196.
+]
 
-
-Package xcolor Warning: Incompatible color definition on input line 196.
-
-
-Package xcolor Warning: Incompatible color definition on input line 202.
+Package xcolor Warning: Incompatible color definition on input line 199.
 
 
-Package xcolor Warning: Incompatible color definition on input line 206.
+Package xcolor Warning: Incompatible color definition on input line 199.
 
 
-Package xcolor Warning: Incompatible color definition on input line 206.
+Overfull \hbox (38.25pt too wide) in paragraph at lines 203--203
+[]\TU/lmtt/m/n/10 ## Warning in mask$eval_all_mutate(dots[[i]]): NAs introduced
+ by coercion[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 205.
+
+
+Package xcolor Warning: Incompatible color definition on input line 209.
+
+
+Package xcolor Warning: Incompatible color definition on input line 209.
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
@@ -756,286 +983,92 @@ Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  1             NA               NA              NA        
-          NA[] 
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ##  1             20.8             29.6             2.4      
+        NA[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ##  2             22.2             31.5             4.48     
+        NA[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  2             NA               NA              NA        
-          NA[] 
- []
-
-[1
-
-]
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  3             22.3             28.2             3.05     
-          NA[] 
+[]\TU/lmtt/m/n/10 ##  3             NA               NA              NA        
+        22.3[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  4             NA               NA              NA        
-          NA[] 
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ##  4             24.9             25.4             3.77     
+        NA[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  5             24.7             25.6             3.69     
-          NA[] 
+[]\TU/lmtt/m/n/10 ##  5             NA               NA              NA        
+        24.7[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ##  6             26.2             23.3             3.62     
+        NA[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  6             NA               NA              NA        
-          NA[] 
+[]\TU/lmtt/m/n/10 ##  7             NA               NA              NA        
+        25.5[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ##  8             26.6             23.0             3.78     
+        NA[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  7             25.5             24.4             3.72     
-          NA[] 
+[]\TU/lmtt/m/n/10 ##  9             NA               NA              NA        
+        26.1[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  8             NA               NA              NA        
-          NA[] 
+Overfull \hbox (27.75pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## 10             27.2             22.7             4.13     
+        NA[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ##  9             26.1             24.0             3.95     
-          NA[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## 10             NA               NA              NA        
-          NA[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## # ... with 6,879 more rows, and 60 more variables: []RH (M
-X-RH-2[] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## # ... with 132,512 more rows, and 57 more variables: []RH 
+(MX-RH-2[] 
  []
 
 
 Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835815:20835815-2), %, 20835815[] <dbl>, []Dew Point
+[]\TU/lmtt/m/n/10 ## #   20835814:20835814-2), %, 20835814[] <dbl>, []Dew Point
  (MX-TEMP-2[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835815:20835815-4), *C, 20835815[] <dbl>, []Temperat
+[]\TU/lmtt/m/n/10 ## #   20835814:20835814-4), *C, 20835814[] <dbl>, []Temperat
 ure (MX-TEMP-2[] 
  []
 
 
 Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835816:20835816-2), %, 20835816[] <dbl>, []Dew Point
+[]\TU/lmtt/m/n/10 ## #   20843239:20843239-2), %, 20843239[] <dbl>, []Dew Point
  (MX-TEMP-2[] 
  []
 
 
 Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835816:20835816-4), *C, 20835816[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835817:20835817-2), %, 20835817[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835817:20835817-4), *C, 20835817[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835818:20835818-2), %, 20835818[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835818:20835818-4), *C, 20835818[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835819:20835819-2), %, 20835819[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835819:20835819-4), *C, 20835819[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835820:20835820-2), %, 20835820[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835820:20835820-4), *C, 20835820[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835821:20835821-2), %, 20835821[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835821:20835821-4), *C, 20835821[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835822:20835822-2), %, 20835822[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835822:20835822-4), *C, 20835822[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835823:20835823-2), %, 20835823[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835823:20835823-4), *C, 20835823[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835824:20835824-2), %, 20835824[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835824:20835824-4), *C, 20835824[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835825:20835825-2), %, 20835825[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20835825:20835825-4), *C, 20835825[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843228:20843228-2), %, 20843228[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843228:20843228-4), *C, 20843228[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843229:20843229-2), %, 20843229[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-[2]
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843229:20843229-4), *C, 20843229[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843230:20843230-2), %, 20843230[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843230:20843230-4), *C, 20843230[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843231:20843231-2), %, 20843231[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843231:20843231-4), *C, 20843231[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843233:20843233-2), %, 20843233[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843233:20843233-4), *C, 20843233[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843235:20843235-2), %, 20843235[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843235:20843235-4), *C, 20843235[] <dbl>, []Temperat
-ure (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843236:20843236-2), %, 20843236[] <dbl>, []Dew Point
- (MX-TEMP-2[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843236:20843236-4), *C, 20843236[] <dbl>, []Temperat
+[]\TU/lmtt/m/n/10 ## #   20843239:20843239-4), *C, 20843239[] <dbl>, []Temperat
 ure (MX-TEMP-2[] 
  []
 
@@ -1053,7 +1086,187 @@ ure (MX-TEMP-2[]
 
 
 Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
-[]\TU/lmtt/m/n/10 ## #   20843239:20843239-2), %, 20843239[] <dbl>, []Dew Point
+[]\TU/lmtt/m/n/10 ## #   20843235:20843235-2), %, 20843235[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843235:20843235-4), *C, 20843235[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843233:20843233-2), %, 20843233[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843233:20843233-4), *C, 20843233[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843231:20843231-2), %, 20843231[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843231:20843231-4), *C, 20843231[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843230:20843230-2), %, 20843230[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+[2]
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843230:20843230-4), *C, 20843230[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843229:20843229-2), %, 20843229[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843229:20843229-4), *C, 20843229[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843228:20843228-2), %, 20843228[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20843228:20843228-4), *C, 20843228[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835825:20835825-2), %, 20835825[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835825:20835825-4), *C, 20835825[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835824:20835824-2), %, 20835824[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835824:20835824-4), *C, 20835824[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835823:20835823-2), %, 20835823[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835823:20835823-4), *C, 20835823[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835822:20835822-2), %, 20835822[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835822:20835822-4), *C, 20835822[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835821:20835821-2), %, 20835821[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835821:20835821-4), *C, 20835821[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835820:20835820-2), %, 20835820[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835820:20835820-4), *C, 20835820[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835819:20835819-2), %, 20835819[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835819:20835819-4), *C, 20835819[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835818:20835818-2), %, 20835818[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835818:20835818-4), *C, 20835818[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835817:20835817-2), %, 20835817[] <dbl>, []Dew Point
+ (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835817:20835817-4), *C, 20835817[] <dbl>, []Temperat
+ure (MX-TEMP-2[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 282--282
+[]\TU/lmtt/m/n/10 ## #   20835815:20835815-2), %, 20835815[] <dbl>, []Dew Point
  (MX-TEMP-2[] 
  []
 
@@ -1086,80 +1299,90 @@ Package xcolor Warning: Incompatible color definition on input line 326.
 Package xcolor Warning: Incompatible color definition on input line 326.
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
-[]\TU/lmtt/m/n/10 ##    date                logger                             
-      temperature[] 
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
+[]\TU/lmtt/m/n/10 ##    date                logger_id                          
+           temperature[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##    <dttm>              <chr>                              
-            <dbl>[] 
+                 <dbl>[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  1 2020-05-14 08:21:51 Temperature (MX-TEMP-2 20843236:208
-4323~        20.8[] 
+43236-1),~        20.8[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  2 2020-05-14 08:41:51 Temperature (MX-TEMP-2 20843236:208
-4323~        22.2[] 
+43236-1),~        22.2[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  3 2020-05-14 08:54:29 Temperature (MX-TEMP-2 20835814:208
-3581~        22.3[] 
+35814-1),~        22.3[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  4 2020-05-14 09:01:51 Temperature (MX-TEMP-2 20843236:208
-4323~        24.9[] 
+43236-1),~        24.9[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  5 2020-05-14 09:14:29 Temperature (MX-TEMP-2 20835814:208
-3581~        24.7[] 
+35814-1),~        24.7[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  6 2020-05-14 09:21:51 Temperature (MX-TEMP-2 20843236:208
-4323~        26.2[] 
+43236-1),~        26.2[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  7 2020-05-14 09:34:29 Temperature (MX-TEMP-2 20835814:208
-3581~        25.5[] 
+35814-1),~        25.5[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  8 2020-05-14 09:41:51 Temperature (MX-TEMP-2 20843236:208
-4323~        26.6[] 
+43236-1),~        26.6[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ##  9 2020-05-14 09:54:29 Temperature (MX-TEMP-2 20835814:208
-3581~        26.1[] 
+35814-1),~        26.1[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 343--343
+Overfull \hbox (90.75pt too wide) in paragraph at lines 343--343
 []\TU/lmtt/m/n/10 ## 10 2020-05-14 10:01:51 Temperature (MX-TEMP-2 20843236:208
-4323~        27.2[] 
+43236-1),~        27.2[] 
  []
 
 
 Package xcolor Warning: Incompatible color definition on input line 347.
 
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+[4]
 
 Package xcolor Warning: Incompatible color definition on input line 360.
 
@@ -1178,262 +1401,807 @@ Package xcolor Warning: Incompatible color definition on input line 369.
 
 Package xcolor Warning: Incompatible color definition on input line 375.
 
-[4]
 
-Package xcolor Warning: Incompatible color definition on input line 387.
-
-
-Package xcolor Warning: Incompatible color definition on input line 387.
+Package xcolor Warning: Incompatible color definition on input line 394.
 
 
-Package xcolor Warning: Incompatible color definition on input line 389.
+Package xcolor Warning: Incompatible color definition on input line 394.
 
 
-Package xcolor Warning: Incompatible color definition on input line 393.
+Package xcolor Warning: Incompatible color definition on input line 396.
 
 
-Package xcolor Warning: Incompatible color definition on input line 393.
+Package xcolor Warning: Incompatible color definition on input line 400.
 
 
-Package xcolor Warning: Incompatible color definition on input line 416.
+Package xcolor Warning: Incompatible color definition on input line 400.
 
 
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-[5]
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Overfull \vbox (2.28998pt too high) detected at line 489
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##    date                logger_type logger_id temperature  
+  rh   dew[] 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 489.
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##    <dttm>              <chr>       <chr>           <dbl> <
+dbl> <dbl>[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  1 2020-05-14 08:54:29 MX2301A     20835814        22.3   
+28.2  3.05[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  2 2020-05-14 09:14:29 MX2301A     20835814        24.7   
+25.6  3.69[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  3 2020-05-14 09:34:29 MX2301A     20835814        25.5   
+24.4  3.72[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  4 2020-05-14 09:54:29 MX2301A     20835814        26.1   
+24.0  3.95[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  5 2020-05-14 10:14:29 MX2301A     20835814        26.5   
+23.2  3.83[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  6 2020-05-14 10:34:29 MX2301A     20835814        26.5   
+23.3  3.91[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  7 2020-05-14 10:54:29 MX2301A     20835814        20.6   
+19.5 -3.47[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  8 2020-05-14 11:14:29 MX2301A     20835814         5.32  
+47.9 -4.83[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ##  9 2020-05-14 11:34:29 MX2301A     20835814         4.53  
+53.3 -4.13[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 417--417
+[]\TU/lmtt/m/n/10 ## 10 2020-05-14 14:39:05 MX2301A     20835814         1.88  
+79.3 -1.32[] 
+ []
+
+[5]
+
+Package xcolor Warning: Incompatible color definition on input line 423.
+
+
+Package xcolor Warning: Incompatible color definition on input line 497.
+
+
+Package xcolor Warning: Incompatible color definition on input line 497.
+
+
+Package xcolor Warning: Incompatible color definition on input line 497.
 
 [6]
 
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 493.
-
-
 Package xcolor Warning: Incompatible color definition on input line 497.
 
 
 Package xcolor Warning: Incompatible color definition on input line 497.
+
+
+Package xcolor Warning: Incompatible color definition on input line 501.
 
 
 Package xcolor Warning: Incompatible color definition on input line 505.
 
 
-Package xcolor Warning: Incompatible color definition on input line 509.
+Package xcolor Warning: Incompatible color definition on input line 505.
 
 
-Package xcolor Warning: Incompatible color definition on input line 509.
+Overfull \hbox (38.25pt too wide) in paragraph at lines 509--509
+[]\TU/lmtt/m/n/10 ## Warning in mask$eval_all_mutate(dots[[i]]): NAs introduced
+ by coercion[] 
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 518.
+Package xcolor Warning: Incompatible color definition on input line 511.
 
 
-Package xcolor Warning: Incompatible color definition on input line 524.
+Package xcolor Warning: Incompatible color definition on input line 515.
 
 
-Package xcolor Warning: Incompatible color definition on input line 524.
+Package xcolor Warning: Incompatible color definition on input line 515.
+
+
+Package xcolor Warning: Incompatible color definition on input line 526.
+
+[7]
+
+Package xcolor Warning: Incompatible color definition on input line 532.
+
+
+Package xcolor Warning: Incompatible color definition on input line 532.
 
 File: figure/unnamed-chunk-12-1.png Graphic file (type bmp)
 <figure/unnamed-chunk-12-1.png>
 
-Package xcolor Warning: Incompatible color definition on input line 528.
-
-[7]
-
-Package xcolor Warning: Incompatible color definition on input line 546.
+Package xcolor Warning: Incompatible color definition on input line 536.
 
 
-Package xcolor Warning: Incompatible color definition on input line 546.
+Package xcolor Warning: Incompatible color definition on input line 554.
+
+
+Package xcolor Warning: Incompatible color definition on input line 554.
 
 File: figure/unnamed-chunk-13-1.png Graphic file (type bmp)
 <figure/unnamed-chunk-13-1.png>
 [8]
-
-Package xcolor Warning: Incompatible color definition on input line 556.
-
-
-Package xcolor Warning: Incompatible color definition on input line 571.
-
-
-Package xcolor Warning: Incompatible color definition on input line 571.
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  1 2020-06-21 02:08:33 20835~        20.8  48.7  9.66 2020
--06-21[] 
+Underfull \hbox (badness 1412) in paragraph at lines 560--560
+[][]\TU/lmr/bx/n/14.4 Combine with single files from loggers that
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  2 2020-06-21 02:28:33 20835~        20.7  48.9  9.62 2020
--06-21[] 
- []
+Package xcolor Warning: Incompatible color definition on input line 568.
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  3 2020-06-21 02:48:33 20835~        20.5  50.2  9.83 2020
--06-21[] 
- []
+Package xcolor Warning: Incompatible color definition on input line 594.
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  4 2020-06-21 03:08:33 20835~        20.4  50.1  9.69 2020
--06-21[] 
- []
+Package xcolor Warning: Incompatible color definition on input line 594.
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  5 2020-06-21 03:28:33 20835~        20.5  50.1  9.77 2020
--06-21[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  6 2020-06-21 03:48:33 20835~        20.8  49.8  9.94 2020
--06-21[] 
- []
+Package xcolor Warning: Incompatible color definition on input line 594.
 
 [9]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  7 2020-06-21 04:08:33 20835~        20.9  50.4 10.3  2020
--06-21[] 
+
+Package xcolor Warning: Incompatible color definition on input line 594.
+
+
+Package xcolor Warning: Incompatible color definition on input line 594.
+
+
+Package xcolor Warning: Incompatible color definition on input line 596.
+
+
+Package xcolor Warning: Incompatible color definition on input line 600.
+
+
+Package xcolor Warning: Incompatible color definition on input line 600.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  8 2020-06-21 04:28:33 20835~        21.0  50.8 10.5  2020
--06-21[] 
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20835817 2020-10
+-13 12_18_01 CET (Data CET).csv[][] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ##  9 2020-06-21 04:48:33 20835~        21.2  50.3 10.4  2020
--06-21[] 
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20835817 2020-10
+-13 12_18_01 CET (Data CET).csv[][] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ## 10 2020-06-21 05:08:33 20835~        21.6  49   10.4  2020
--06-21[] 
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20835817 2020-10
+-13 12_18_01 CET (Data CET).csv[][] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 589--589
-[]\TU/lmtt/m/n/10 ## # ... with 62 more rows, and 2 more variables: dailyMaxTem
-p <dbl>,[] 
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20835817 2020-10
+-13 12_18_01 CET (Data CET).csv[][] 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 594.
 
-(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmr' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 594.
-
-(/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 594
-.
-(/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 594
-.
-(/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 594.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 594.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 594.
-LaTeX Font Info:    Try loading font information for U+msa on input line 594.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 594.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-
-Package xcolor Warning: Incompatible color definition on input line 597.
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20835817 2020-10
+-13 12_18_01 CET (Data CET).csv[][] 
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 607.
+Overfull \hbox (138.0pt too wide) in paragraph at lines 612--612
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 607.
-
-File: figure/unnamed-chunk-15-1.png Graphic file (type bmp)
-<figure/unnamed-chunk-15-1.png>
-
-Package xcolor Warning: Incompatible color definition on input line 613.
+Package xcolor Warning: Incompatible color definition on input line 614.
 
 
-Package xcolor Warning: Incompatible color definition on input line 623.
+Package xcolor Warning: Incompatible color definition on input line 618.
 
 
-Package xcolor Warning: Incompatible color definition on input line 623.
+Package xcolor Warning: Incompatible color definition on input line 618.
 
 
-Package xcolor Warning: Incompatible color definition on input line 623.
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20835819 2020-10
+-14 14_33_12 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20835819 2020-10
+-14 14_33_12 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20835819 2020-10
+-14 14_33_12 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20835819 2020-10
+-14 14_33_12 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20835819 2020-10
+-14 14_33_12 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 630--630
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 632.
+
+
+Package xcolor Warning: Incompatible color definition on input line 636.
+
+
+Package xcolor Warning: Incompatible color definition on input line 636.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20835820 2020-10
+-16 14_09_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20835820 2020-10
+-16 14_09_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20835820 2020-10
+-16 14_09_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20835820 2020-10
+-16 14_09_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20835820 2020-10
+-16 14_09_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 648--648
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 650.
 
 [10]
 
-Package xcolor Warning: Incompatible color definition on input line 623.
+Package xcolor Warning: Incompatible color definition on input line 654.
 
 
-Package xcolor Warning: Incompatible color definition on input line 623.
+Package xcolor Warning: Incompatible color definition on input line 654.
 
-File: figure/unnamed-chunk-16-1.png Graphic file (type bmp)
-<figure/unnamed-chunk-16-1.png>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 628.
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20835821 2020-10
+-15 15_49_08 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20835821 2020-10
+-15 15_49_08 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20835821 2020-10
+-15 15_49_08 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20835821 2020-10
+-15 15_49_08 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20835821 2020-10
+-15 15_49_08 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 666--666
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 668.
+
+
+Package xcolor Warning: Incompatible color definition on input line 672.
+
+
+Package xcolor Warning: Incompatible color definition on input line 672.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20835823 2020-10
+-15 12_11_02 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20835823 2020-10
+-15 12_11_02 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20835823 2020-10
+-15 12_11_02 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20835823 2020-10
+-15 12_11_02 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20835823 2020-10
+-15 12_11_02 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 684--684
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 686.
+
+
+Package xcolor Warning: Incompatible color definition on input line 690.
+
+
+Package xcolor Warning: Incompatible color definition on input line 690.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20843228 2020-10
+-14 11_43_58 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20843228 2020-10
+-14 11_43_58 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20843228 2020-10
+-14 11_43_58 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20843228 2020-10
+-14 11_43_58 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20843228 2020-10
+-14 11_43_58 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 702--702
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 704.
+
+
+Package xcolor Warning: Incompatible color definition on input line 708.
+
+
+Package xcolor Warning: Incompatible color definition on input line 708.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20843229 2020-10
+-16 09_59_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20843229 2020-10
+-16 09_59_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20843229 2020-10
+-16 09_59_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20843229 2020-10
+-16 09_59_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20843229 2020-10
+-16 09_59_17 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 720--720
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 722.
+
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 628.
+
+Package xcolor Warning: Incompatible color definition on input line 726.
+
+
+Package xcolor Warning: Incompatible color definition on input line 726.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20843233 2020-10
+-14 16_25_22 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20843233 2020-10
+-14 16_25_22 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20843233 2020-10
+-14 16_25_22 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20843233 2020-10
+-14 16_25_22 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20843233 2020-10
+-14 16_25_22 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 738--738
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 740.
+
+
+Package xcolor Warning: Incompatible color definition on input line 744.
+
+
+Package xcolor Warning: Incompatible color definition on input line 744.
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ## row col  expected     actual                              
+                           file[] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ##   1  -- 8 columns 11 columns []../rawData/20843238 2020-10
+-16 16_52_35 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ##   2  -- 8 columns 11 columns []../rawData/20843238 2020-10
+-16 16_52_35 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ##   3  -- 8 columns 11 columns []../rawData/20843238 2020-10
+-16 16_52_35 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ##   4  -- 8 columns 11 columns []../rawData/20843238 2020-10
+-16 16_52_35 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ##   5  -- 8 columns 11 columns []../rawData/20843238 2020-10
+-16 16_52_35 CET (Data CET).csv[][] 
+ []
+
+
+Overfull \hbox (138.0pt too wide) in paragraph at lines 756--756
+[]\TU/lmtt/m/n/10 ## ... ... ......... .......... .............................
+...............................[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 760.
+
+
+Package xcolor Warning: Incompatible color definition on input line 773.
+
+
+Package xcolor Warning: Incompatible color definition on input line 773.
+
+
+Package xcolor Warning: Incompatible color definition on input line 782.
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Overfull \vbox (1.20833pt too high) detected at line 842
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+[12]
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Underfull \vbox (badness 10000) detected at line 842
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 842
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+[13]
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Package xcolor Warning: Incompatible color definition on input line 842.
+
+
+Package xcolor Warning: Incompatible color definition on input line 844.
+
+
+Package xcolor Warning: Incompatible color definition on input line 848.
+
+
+Package xcolor Warning: Incompatible color definition on input line 848.
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 852--852
+[]\TU/lmtt/m/n/10 ## Warning in mask$eval_all_mutate(dots[[i]]): NAs introduced
+ by coercion[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 862.
+
+
+Package xcolor Warning: Incompatible color definition on input line 875.
+
+
+Package xcolor Warning: Incompatible color definition on input line 875.
+
+
+Package xcolor Warning: Incompatible color definition on input line 880.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+[14]
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 916.
+
+
+Package xcolor Warning: Incompatible color definition on input line 924.
+
+
+Package xcolor Warning: Incompatible color definition on input line 924.
+
+
+Package xcolor Warning: Incompatible color definition on input line 928.
+
+
+Package xcolor Warning: Incompatible color definition on input line 933.
+
+
+Package xcolor Warning: Incompatible color definition on input line 933.
+
+
+Package xcolor Warning: Incompatible color definition on input line 945.
+
+
+Package xcolor Warning: Incompatible color definition on input line 971.
+
+
+Package xcolor Warning: Incompatible color definition on input line 971.
+
+
+Package xcolor Warning: Incompatible color definition on input line 971.
+
+[15]
+
+Package xcolor Warning: Incompatible color definition on input line 971.
+
+
+Package xcolor Warning: Incompatible color definition on input line 971.
+
+
+Package xcolor Warning: Incompatible color definition on input line 973.
+
+
+Package xcolor Warning: Incompatible color definition on input line 981.
+
+
+Package xcolor Warning: Incompatible color definition on input line 981.
+
+
+Package xcolor Warning: Incompatible color definition on input line 989.
+
+
+Package xcolor Warning: Incompatible color definition on input line 994.
+
+
+Package xcolor Warning: Incompatible color definition on input line 994.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 997.
+[16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 997.
 (./arrangeHoboData.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 628.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 628.
-Package rerunfilecheck Info: File `arrangeHoboData.out' has not changed.
-(rerunfilecheck)             Checksum: 196C4E3E67CCE4DB2EDF6E1B50B5C730.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 997.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 997.
  ) 
 Here is how much of TeX's memory you used:
- 25250 strings out of 494152
- 471091 string characters out of 6158058
- 606633 words of memory out of 5000000
- 28994 multiletter control sequences out of 15000+600000
- 545346 words of font info for 52 fonts, out of 8000000 for 9000
- 430 hyphenation exceptions out of 8191
- 46i,7n,54p,812b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23221 strings out of 494412
+ 429847 string characters out of 6163919
+ 567658 words of memory out of 5000000
+ 26859 multiletter control sequences out of 15000+600000
+ 543288 words of font info for 51 fonts, out of 8000000 for 9000
+ 350 hyphenation exceptions out of 8191
+ 45i,6n,54p,10456b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on arrangeHoboData.pdf (11 pages).
+Output written on arrangeHoboData.pdf (16 pages).

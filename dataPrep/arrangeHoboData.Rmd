@@ -1,5 +1,5 @@
 ---
-title: "Arranging logger data from HoboLink"
+title: "Arranging logger data from HoboLink and importing them to the database"
 author: "Jens Åström"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
@@ -44,26 +44,28 @@ palette(ninaPalette())
 
 
 
-```{r, include = F, eval = F}
+```{r, include = F, eval = T}
+source("~/.rpgpass")
 #This connects to the gisdatabase with a DBI connection named `con`.
 #Use for example dbGetQuery(con, "SELECT * FROM ....") to query the database
-postgreSQLConnect(host = "gisdata-db.nina.no", 
-                 dbname = "gisdata", 
-                 username = "postgjest", 
-                 password = "gjestpost")
+postgreSQLConnect(host = "ninradardata01.nina.no", 
+                 dbname = "insect_monitoring", 
+                 username = username, 
+                 password = password)
+rm(username, password)
 ```
 
 Intro
 ===========
-The data exports for the temperature and humidity MX loggers from Hobo needs a bit of data wrangling before it can be used. The different data streams from each logger all get a separate column. Here we develop a script to turn this into a more usable long format.
+The data exports for the temperature and humidity MX loggers from Hobo needs a bit of data wrangling before it can be used. The different data streams from each logger all get a separate column. Here we develop a script to turn this into a more usable long format. We also make tables in a database and upload the data there.
 
 
 Read in data
 ==========
-I have a single export with many loggers, as a csv file. 
+We have an export file from Hobolink.com with many loggers as a csv file. We also have some individual csv files that failed to upload to the Hobo site, that we'll handle later on.
 
 ```{r}
-inputFile <- "../rawData/All_MX_2020_2020_06_26_09_20_43_UTC_1.csv"
+inputFile <- "../rawData/Insektoverv_k_2020_2020_10_27_12_07_50_UTC_1.csv"
 
 rawDat <- read_csv(inputFile,col_types = cols(.default = "c"))
 
@@ -78,33 +80,32 @@ dat
 That's quite the number of columns...
 
 
-
 We have to pivot this data set to a longer format. We also get rid of the rows with no data.
 ```{r}
 temp <- dat %>% 
   pivot_longer(cols = starts_with("Temperature"),
-               names_to = "logger",
+               names_to = "logger_id",
                values_to = "temperature") %>% 
   select(date,
-         logger,
+         logger_id,
          temperature) %>% 
   filter(!is.na(temperature))
 
 rh <- dat %>% 
   pivot_longer(cols = starts_with("RH"),
-               names_to = "logger",
+               names_to = "logger_id",
                values_to = "rh") %>% 
   select(date,
-         logger,
+         logger_id,
          rh)%>% 
   filter(!is.na(rh))
 
 dew  <- dat %>% 
   pivot_longer(cols = starts_with("Dew"),
-               names_to = "logger",
+               names_to = "logger_id",
                values_to = "dew") %>% 
   select(date,
-         logger,
+         logger_id,
          dew) %>% 
   filter(!is.na(dew))
 
@@ -119,14 +120,14 @@ Time to strip the logger names and merge the tables
 
 ```{r}
 temp <- temp %>% 
-  mutate(logger = str_extract(logger,
+  mutate(logger_id = str_extract(logger_id,
                               "[^, ]+$"))
 
 rh <- rh %>% 
-  mutate(logger = str_extract(logger,
+  mutate(logger_id = str_extract(logger_id,
                               "[^, ]+$"))
 dew <- dew %>% 
-  mutate(logger = str_extract(logger,
+  mutate(logger_id = str_extract(logger_id,
                               "[^, ]+$"))
 
 ```
@@ -141,12 +142,19 @@ all(rh$date == dew$date))
 combDat <- temp %>% 
   full_join(rh,
              by = c("date" = "date",
-                    "logger" = "logger")) %>% 
+                    "logger_id" = "logger_id")) %>% 
   full_join(dew,
             by = c("date" = "date",
-                    "logger" = "logger")) %>% 
-  arrange(logger,
-          date)
+                    "logger_id" = "logger_id")) %>% 
+  arrange(logger_id,
+          date) %>% 
+    mutate(logger_type = "MX2301A") %>% 
+    select(date, 
+           logger_type,
+           logger_id,
+           temperature,
+           rh,
+           dew)
 ```
 
 
@@ -158,7 +166,7 @@ Package this into a function
 ==========
 
 ```{r}
-longerHobo <- function(inputFile){
+longerHobo2301 <- function(inputFile){
   
   rawDat <- read_csv(inputFile,col_types = cols(.default = "c"))
 
@@ -169,49 +177,42 @@ longerHobo <- function(inputFile){
     select(-Date)
 
 
-    dat <- rawDat %>%  
-  select(-"Line#") %>% 
-  mutate(date = as.POSIXct(Date, format = "%m/%d/%y %H:%M:%S")) %>% 
-  mutate_if(is_character, as.double) %>% 
-  select(-Date)
- 
-   
   temp <- dat %>% 
     pivot_longer(cols = starts_with("Temperature"),
-               names_to = "logger",
+               names_to = "logger_id",
                values_to = "temperature") %>% 
     select(date,
-         logger,
+         logger_id,
          temperature) %>% 
     filter(!is.na(temperature))
 
   rh <- dat %>% 
     pivot_longer(cols = starts_with("RH"),
-                 names_to = "logger",
+                 names_to = "logger_id",
                  values_to = "rh") %>% 
     select(date,
-           logger,
+           logger_id,
            rh)%>% 
     filter(!is.na(rh))
   
   dew  <- dat %>% 
     pivot_longer(cols = starts_with("Dew"),
-                 names_to = "logger",
+                 names_to = "logger_id",
                  values_to = "dew") %>% 
     select(date,
-           logger,
+           logger_id,
            dew) %>% 
     filter(!is.na(dew))
   
   
   temp <- temp %>% 
-    mutate(logger = str_extract(logger,
+    mutate(logger_id = str_extract(logger_id,
                               "[^, ]+$"))
   rh <- rh %>% 
-    mutate(logger = str_extract(logger,
+    mutate(logger_id = str_extract(logger_id,
                                 "[^, ]+$"))
   dew <- dew %>% 
-    mutate(logger = str_extract(logger,
+    mutate(logger_id = str_extract(logger_id,
                                 "[^, ]+$"))
   
   if(!all(all(temp$date == rh$date),
@@ -220,12 +221,19 @@ longerHobo <- function(inputFile){
   combDat <- temp %>% 
   full_join(rh,
              by = c("date" = "date",
-                    "logger" = "logger")) %>% 
+                    "logger_id" = "logger_id")) %>% 
   full_join(dew,
             by = c("date" = "date",
-                    "logger" = "logger")) %>% 
-  arrange(logger,
-          date)
+                    "logger_id" = "logger_id")) %>% 
+  arrange(logger_id,
+          date) %>% 
+    mutate(logger_type = "MX2301A") %>% 
+    select(date, 
+           logger_type,
+           logger_id,
+           temperature,
+           rh,
+           dew)
   
   return(combDat)
 }
@@ -234,7 +242,7 @@ longerHobo <- function(inputFile){
 We can check that it produces the same results as the script.
 
 ```{r}
-combDat2 <- longerHobo("../rawData/All_MX_2020_2020_06_26_09_20_43_UTC_1.csv")
+combDat2 <- longerHobo2301("../rawData/Insektoverv_k_2020_2020_10_27_12_07_50_UTC_1.csv")
 
 all(combDat == combDat2)
 ```
@@ -242,23 +250,24 @@ all(combDat == combDat2)
 
 Check the data out
 =======
+Some simple figures.
 
 ```{r}
 ggplot(combDat) +
-  geom_line(aes(x = date, y = temperature, color = logger)) +
+  geom_line(aes(x = date, y = temperature, color = logger_id)) +
   ggtitle("All the temperatures so far")
 
 ```
 
 ```{r}
 oneLogger <- combDat %>% 
-  filter(logger == "20835816") %>% 
+  filter(logger_id == "20835815") %>% 
   select(Date = date, 
-         logger,
+         logger_id,
          Temperature = temperature,
          Relative_humidity = rh,
          Dew_point = dew) %>% 
-  pivot_longer(-c(Date, logger),
+  pivot_longer(-c(Date, logger_id),
                names_to = "Data_type",
                values_to = "Values")
   
@@ -268,46 +277,296 @@ ggplot(oneLogger) +
   ggtitle("All the data from one logger")
 ```
 
-That looks like some days were pretty warm. This logger was placed outside my house and gets some sun in the evening. Let's look at the hottest day. We can add columns with the highest temperature per day and lowest. I'll look at dates later than 25/5 since I think I had it indoors until then.
+
+Combine with single files from loggers that weren't synced
+====================
+We had some troubles with the uploads from HoboConnect to Hobolink.com from the CAT-phones. So the logger files from Oslo is provided individually by email. Time to combine these as well. These have a different data format than the export from hobolink. They also have some extra columns at the end, which we can disregard.
 
 ```{r}
-minMaxTemp <- combDat %>% 
-  mutate(day = as.Date(date)) %>% 
-  group_by(logger, day) %>% 
-  mutate(dailyMaxTemp = max(temperature),
-         dailyMinTemp = min(temperature)) %>% 
-  ungroup()
+
+formatMX2301File <- function(inputFile){
+raw <- read_csv(file = inputFile,
+                col_types = cols())
+
+logger_id <- gsub("(.*/)([0-9]*)( .*)", "\\2", inputFile)
+  
+out <- raw %>% 
+  mutate(logger_id = logger_id,
+         date = as.POSIXct(`Date-Time (CET)`, format = "%m.%d.%Y %H.%M.%S"),
+         temperature = as.double(`Ch: 1 - Temperature  °C (°C)`),
+         rh = as.double(`Ch: 2 - RH  % (%)`),
+         dew = as.double(`Dew Point  °C (°C)`),
+         logger_type = "MX2301A") %>% 
+  select(date,
+         logger_type,
+         logger_id,
+         temperature,
+         rh,
+         dew)
+
+return(out)
+
+}
+```
+```{r, message = F}
+logger_20835817 <- formatMX2301File("../rawData/20835817 2020-10-13 12_18_01 CET (Data CET).csv")
+logger_20835819 <- formatMX2301File("../rawData/20835819 2020-10-14 14_33_12 CET (Data CET).csv")
+logger_20835820 <- formatMX2301File("../rawData/20835820 2020-10-16 14_09_17 CET (Data CET).csv")
+logger_20835821 <- formatMX2301File("../rawData/20835821 2020-10-15 15_49_08 CET (Data CET).csv")
+logger_20835823 <- formatMX2301File("../rawData/20835823 2020-10-15 12_11_02 CET (Data CET).csv")
+logger_20843228 <- formatMX2301File("../rawData/20843228 2020-10-14 11_43_58 CET (Data CET).csv")
+logger_20843229 <- formatMX2301File("../rawData/20843229 2020-10-16 09_59_17 CET (Data CET).csv")
+logger_20843233 <- formatMX2301File("../rawData/20843233 2020-10-14 16_25_22 CET (Data CET).csv")
+logger_20843238 <- formatMX2301File("../rawData/20843238 2020-10-16 16_52_35 CET (Data CET).csv")
+```
+
+Combine these files to the other ones.
+
+```{r}
+allMX2301 <- combDat2 %>% 
+  rbind(logger_20835817) %>% 
+  rbind(logger_20835819) %>% 
+  rbind(logger_20835820) %>% 
+  rbind(logger_20835821) %>% 
+  rbind(logger_20835823) %>% 
+  rbind(logger_20843228) %>% 
+  rbind(logger_20843229) %>% 
+  rbind(logger_20843233) %>% 
+  rbind(logger_20843238) 
+  
+```
 
 
-minMaxTemp %>% 
-  filter(logger == "20835816") %>%
-  filter(day > '2020-05-25') %>% 
-  filter(dailyMinTemp == max(dailyMinTemp))
+Handle the MX2201 loggers
+==========
+These are temperature and light loggers that where also placed at some locations (that also had sound loggers). They have slightly different format, so we adapt the function to handle these.
 
+
+```{r}
+longerHobo2202 <- function(inputFile){
+rawDat <- read_csv(inputFile,
+                   guess_max = 10000,
+                   col_types = cols())
+
+  dat <- rawDat %>%  
+    select(-"Line#") %>% 
+    mutate(date = as.POSIXct(Date, format = "%m/%d/%y %H:%M:%S")) %>% 
+    mutate_if(is_character, as.double) %>% 
+    select(-Date)
+
+
+   
+  temp <- dat %>% 
+    pivot_longer(cols = starts_with("Temperature"),
+               names_to = "logger_id",
+               values_to = "temperature") %>% 
+    select(date,
+         logger_id,
+         temperature) %>% 
+    filter(!is.na(temperature))
+
+  light <- dat %>% 
+    pivot_longer(cols = starts_with("Light"),
+                 names_to = "logger_id",
+                 values_to = "light") %>% 
+    select(date,
+           logger_id,
+           light)%>% 
+    filter(!is.na(light))
+  
+  
+  
+  temp <- temp %>% 
+    mutate(logger_id = str_extract(logger_id,
+                              "[^, ]+$"))
+  light <- light %>% 
+    mutate(logger_id = str_extract(logger_id,
+                                "[^, ]+$"))
+
+  if(!all(temp$date == light$date)) stop("Tables datetimes doesn't match")
+  
+  combDat <- temp %>% 
+  full_join(light,
+             by = c("date" = "date",
+                    "logger_id" = "logger_id")) %>% 
+  arrange(logger_id,
+          date) %>% 
+    mutate(logger_type = "MX2202") %>% 
+    select(date, 
+           logger_type,
+           logger_id,
+           temperature,
+           light)
+  
+  return(combDat)
+}
+```
+
+```{r}
+allMX2202 <- longerHobo2202(inputFile = "../rawData/Insect_MX2202_temp_light_2020_10_27_13_02_59_UTC_1.csv")
+```
+
+
+Write the data to the database
+==========
+In the database, we combine the logger types into one table, and make it even longer. I.e. we combine all values in one column. (Many ways to do this).
+
+
+```{r}
+allMX2301Long <- allMX2301 %>% 
+  pivot_longer(cols = c("temperature", "rh", "dew"),
+               names_to = "data_type")
+
+allMX2202Long <- allMX2202 %>% 
+  pivot_longer(cols = c("temperature", "light"),
+               names_to = "data_type")
+
+allLoggersLong <- allMX2301Long %>% 
+  rbind(allMX2202Long)
 
 ```
 
-So it looks like 2020-06-21 had the "highest lowest" daily temperature. A little poking around shows that the night up to the 21/6 actually was a "tropical night", with temperatures above $20^{\circ}$ Celsius. The sharp spike above 35 degrees at about 16:00 on 22/6 is when the sun hit the logger.
 
-```{r}
-minMaxTemp %>% 
-  filter(logger == "20835816") %>%
-  filter(day >= '2020-06-20' &
-           day <= '2020-06-21') %>% 
-  ggplot(.) +
-  geom_line(aes(x = date, y = temperature), color = "orangered4") +
-  ggtitle("Tropical night in Trøndelag.")
+Make the database table
+-----------------
+
+```{r, eval = F}
+createLoggerSchemaQ <- "
+CREATE SCHEMA IF NOT EXISTS loggers;
+"
+
+createLoggerTableQ <- "
+CREATE TABLE IF NOT EXISTS loggers.logger_data (
+--id uuid NOT NULL DEFAULT gen_random_uuid(),
+id serial NOT NULL,
+date timestamptz NOT NULL,
+logger_type text NOT NULL,
+logger_id integer NOT NULL,
+data_type text NOT NULL,
+value double precision
+);
+
+"
+
+dbSendQuery(con, createLoggerSchemaQ)
+dbSendQuery(con, createLoggerTableQ)
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_data USING BTREE(date);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_data USING BTREE(logger_type);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_data USING BTREE(logger_id);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_data USING BTREE(data_type);")
+
 ```
 
-This seems to have been the only night so far this warm.
+```{r, eval = F}
+dbWriteTable(con, 
+             name = Id(schema = "loggers", table = "logger_data"),
+             value = allLoggersLong,
+             append = T
+             )
+
+```
+
+Read in logger deployments
+```{r}
+logger_deployments <- read_delim("../../../Data/klimalogger/logger_deployments_2020.csv",
+                               delim = ";")
+```
+
+
+```{r, eval = F}
+createLoggerDeploymentsQ <- "
+CREATE TABLE IF NOT EXISTS loggers.logger_deployments (
+--id uuid NOT NULL DEFAULT gen_random_uuid(),
+id serial PRIMARY KEY,
+logger_id integer NOT NULL,
+logger_type text NOT NULL,
+year integer NOT NULL,
+location text NOT NULL
+);
+"
+dbSendQuery(con, createLoggerDeploymentsQ)
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_deployments USING BTREE(logger_id);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_deployments USING BTREE(logger_type);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_deployments USING BTREE(year);")
+
+dbSendQuery(con,
+            "CREATE INDEX ON loggers.logger_deployments USING BTREE(location);")
+
+
+```
+```{r, eval = F}
+dbWriteTable(con,
+             name = Id(schema = "loggers", table = "logger_deployments"),
+             value = logger_deployments,
+             append = T
+             )
+```
+
+Write the data as CSV
+=============
+We also write the data as csv files, if we don't want to use the database.
 
 ```{r}
-minMaxTemp %>% 
-  filter(logger == "20835816") %>%
-  filter(day >= '2020-06-01' &
-           day <= '2020-06-30') %>% 
-  ggplot(.) +
-  geom_line(aes(x = date, y = temperature), color = "orangered4") +
-  geom_hline(yintercept = 20) 
+write_csv(allLoggersLong, path = "../out/insectLogger_data_2020.csv")
+write_csv(logger_deployments, path = "../out/insect_logger_deployments.csv")
 ```
+
+
+
+<!-- This logger was placed outside my house and gets some sun in the evening. Let's look at the hottest day. We can add columns with the highest temperature per day and lowest. I'll look at dates later than 25/5 since I think I had it indoors until then. -->
+
+<!-- ```{r} -->
+<!-- minMaxTemp <- combDat %>%  -->
+<!--   mutate(day = as.Date(date)) %>%  -->
+<!--   group_by(logger, day) %>%  -->
+<!--   mutate(dailyMaxTemp = max(temperature), -->
+<!--          dailyMinTemp = min(temperature)) %>%  -->
+<!--   ungroup() -->
+
+
+<!-- minMaxTemp %>%  -->
+<!--   filter(logger == "20835816") %>% -->
+<!--   filter(day > '2020-05-25') %>%  -->
+<!--   filter(dailyMinTemp == max(dailyMinTemp)) -->
+
+
+<!-- ``` -->
+
+<!-- So it looks like 2020-06-21 had the "highest lowest" daily temperature. A little poking around shows that the night up to the 21/6 actually was a "tropical night", with temperatures above $20^{\circ}$ Celsius. The sharp spike above 35 degrees at about 16:00 on 22/6 is when the sun hit the logger. -->
+
+<!-- ```{r} -->
+<!-- minMaxTemp %>%  -->
+<!--   filter(logger == "20835816") %>% -->
+<!--   filter(day >= '2020-06-20' & -->
+<!--            day <= '2020-06-21') %>%  -->
+<!--   ggplot(.) + -->
+<!--   geom_line(aes(x = date, y = temperature), color = "orangered4") + -->
+<!--   ggtitle("Tropical night in Trøndelag.") -->
+<!-- ``` -->
+
+<!-- This seems to have been the only night so far this warm. -->
+
+<!-- ```{r} -->
+<!-- minMaxTemp %>%  -->
+<!--   filter(logger == "20835816") %>% -->
+<!--   filter(day >= '2020-06-01' & -->
+<!--            day <= '2020-06-30') %>%  -->
+<!--   ggplot(.) + -->
+<!--   geom_line(aes(x = date, y = temperature), color = "orangered4") + -->
+<!--   geom_hline(yintercept = 20)  -->
+<!-- ``` -->
 
