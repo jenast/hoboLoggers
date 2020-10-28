@@ -4,6 +4,6 @@
 .Ruserdata
 rawData
 out
-.log
-.tex
+*.log
+*.tex
 
