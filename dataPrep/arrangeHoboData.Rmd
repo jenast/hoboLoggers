@@ -336,6 +336,26 @@ allMX2301 <- combDat2 %>%
   
 ```
 
+Double check dew points
+-------
+This is a simplified formula for dew point, that seems to correspond fairly OK with the logger data. Not likely to be errors here.
+```{r}
+dewPoint <- function(input){
+ 
+  input %>% 
+    mutate(calc_dew_point = temperature - ((100 - rh)/5)) %>% 
+  select(calc_dew_point)
+}
+```
+```{r, eval = F}
+combDat2
+dewPoint(combDat2)
+
+logger_20835817
+dewPoint(logger_20835817)
+```
+
+
 
 Handle the MX2201 loggers
 ==========
