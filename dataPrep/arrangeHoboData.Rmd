@@ -65,7 +65,7 @@ Read in data
 We have an export file from Hobolink.com with many loggers as a csv file. We also have some individual csv files that failed to upload to the Hobo site, that we'll handle later on.
 
 ```{r}
-inputFile <- "../rawData/Insektoverv_k_2020_2020_10_27_12_07_50_UTC_1.csv"
+inputFile <- "../rawData/Insektoverv_k_2020_2020_11_10_11_56_24_UTC_1.csv"
 
 rawDat <- read_csv(inputFile,col_types = cols(.default = "c"))
 
@@ -242,7 +242,7 @@ longerHobo2301 <- function(inputFile){
 We can check that it produces the same results as the script.
 
 ```{r}
-combDat2 <- longerHobo2301("../rawData/Insektoverv_k_2020_2020_10_27_12_07_50_UTC_1.csv")
+combDat2 <- longerHobo2301("../rawData/Insektoverv_k_2020_2020_11_10_11_56_24_UTC_1.csv")
 
 all(combDat == combDat2)
 ```
@@ -253,7 +253,7 @@ Check the data out
 Some simple figures.
 
 ```{r}
-ggplot(combDat) +
+ggplot(combDat2) +
   geom_line(aes(x = date, y = temperature, color = logger_id)) +
   ggtitle("All the temperatures so far")
 
@@ -309,30 +309,31 @@ return(out)
 }
 ```
 ```{r, message = F}
-logger_20835817 <- formatMX2301File("../rawData/20835817 2020-10-13 12_18_01 CET (Data CET).csv")
-logger_20835819 <- formatMX2301File("../rawData/20835819 2020-10-14 14_33_12 CET (Data CET).csv")
+#logger_20835817 <- formatMX2301File("../rawData/20835817 2020-10-13 12_18_01 CET (Data CET).csv")
+#logger_20835819 <- formatMX2301File("../rawData/20835819 2020-10-14 14_33_12 CET (Data CET).csv")
 logger_20835820 <- formatMX2301File("../rawData/20835820 2020-10-16 14_09_17 CET (Data CET).csv")
-logger_20835821 <- formatMX2301File("../rawData/20835821 2020-10-15 15_49_08 CET (Data CET).csv")
-logger_20835823 <- formatMX2301File("../rawData/20835823 2020-10-15 12_11_02 CET (Data CET).csv")
-logger_20843228 <- formatMX2301File("../rawData/20843228 2020-10-14 11_43_58 CET (Data CET).csv")
-logger_20843229 <- formatMX2301File("../rawData/20843229 2020-10-16 09_59_17 CET (Data CET).csv")
-logger_20843233 <- formatMX2301File("../rawData/20843233 2020-10-14 16_25_22 CET (Data CET).csv")
-logger_20843238 <- formatMX2301File("../rawData/20843238 2020-10-16 16_52_35 CET (Data CET).csv")
+#logger_20835821 <- formatMX2301File("../rawData/20835821 2020-10-15 15_49_08 CET (Data CET).csv")
+#logger_20835823 <- formatMX2301File("../rawData/20835823 2020-10-15 12_11_02 CET (Data CET).csv")
+#logger_20843228 <- formatMX2301File("../rawData/20843228 2020-10-14 11_43_58 CET (Data CET).csv")
+#logger_20843229 <- formatMX2301File("../rawData/20843229 2020-10-16 09_59_17 CET (Data CET).csv")
+#logger_20843233 <- formatMX2301File("../rawData/20843233 2020-10-14 16_25_22 CET (Data CET).csv")
+#logger_20843238 <- formatMX2301File("../rawData/20843238 2020-10-16 16_52_35 CET (Data CET).csv")
 ```
 
 Combine these files to the other ones.
 
 ```{r}
 allMX2301 <- combDat2 %>% 
-  rbind(logger_20835817) %>% 
-  rbind(logger_20835819) %>% 
-  rbind(logger_20835820) %>% 
-  rbind(logger_20835821) %>% 
-  rbind(logger_20835823) %>% 
-  rbind(logger_20843228) %>% 
-  rbind(logger_20843229) %>% 
-  rbind(logger_20843233) %>% 
-  rbind(logger_20843238) 
+  #rbind(logger_20835817) %>% 
+  #rbind(logger_20835819) %>% 
+  rbind(logger_20835820) 
+#%>% 
+  #rbind(logger_20835821) %>% 
+  #rbind(logger_20835823) %>% 
+  #rbind(logger_20843228) %>% 
+  #rbind(logger_20843229) %>% 
+  #rbind(logger_20843233) %>% 
+  #rbind(logger_20843238) 
   
 ```
 
@@ -485,7 +486,9 @@ dbSendQuery(con,
 
 ```
 
-```{r, eval = F}
+```{r, eval = T}
+dbSendStatement(con, "DELETE FROM loggers.logger_data;")
+
 dbWriteTable(con, 
              name = Id(schema = "loggers", table = "logger_data"),
              value = allLoggersLong,
